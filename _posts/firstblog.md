@@ -1,62 +1,72 @@
 ---
 date: '2022-07-15T11:50:54.000Z'
-title: Amazing Blog
-tagline: This is a Tagline If you want to add.
+title: How to correctly use Emojis in React
+tagline: React
 preview: >-
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it to make a type
-  specimen book.
+  Emojis have become an important part of online communication, there are over
+  3,633 emojis in the Unicode standard as of September 2021. However,
+  integrating these emojis in React can be tricky, and doing so incorrectly can
+  lead to errors and accessibility issues.
 image: >-
   https://images.unsplash.com/photo-1656188505561-19f1a1b6cda8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80
 ---
 
-# Heading One
+Emojis have become an important part of online communication, there are over 3,633 emojis in the Unicode standard as of September 2021. However, integrating these emojis in React can be tricky, and doing so incorrectly can lead to errors and accessibility issues.  I would also be demonstrating how to create a reusable React component for emojis that can be used across your entire app. So, let's dive!
 
-**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+### The Wrong Way
 
-## This is Heading Two
+Before diving into the correct way of using emojis in React, it is important to understand the common mistakes to avoid. Some methods to steer clear of when using emojis in React are:
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+1. **Inserting the emoji's Unicode character using curly braces:** Emojis are represented by Unicode characters, like the smiley face emoji (U+263A). To use this emoji in React, you can convert it into a string, convert the 'U' to lowercase, remove the plus sign, and then escape it within curly braces ({'u263A'}). This approach However, only works with certain emojis, so it is best to avoid it unless you are willing to deal with error messages and problems with accessibility.
+2. **Copying and pasting the emoji directly into React:** While it may seem like the easiest option, copying and pasting an emoji directly into React would result in errors and accessibility problems. In fact, If you open up your terminal, you would find an error message stating that "emojis should be wrapped in <span> and have a role='img' with an accessible description using aria-label or aria-labeledby", so this method should be avoided because it results in accessibility issues.
 
-### This is Heading Three
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-#### This is Heading Four With Code Block
+### The Recommended method for using emojis in React
+The recommended method for using emojis in React. It involves wrapping them in a <span> element, giving them a role='img' label, and including an aria-label. This technique guarantees that emojis in your app can be enjoyed by everyone, even those who require screen readers. Here is an example:
 
 ```jsx
-<code className={className} {...props}>
-  {children}
-</code>
+<span role='img' aria-label='smiling Emoji'>😀</span>
 ```
 
-## BLockquote
+In addition to the recommended method, you may also want to create a reusable emoji component if you frequently use emojis in your React app. Here is an example code snippet for creating an Emoji component:
 
-> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+```jsx
+import React from 'react';
 
-## Ordered List with horizontal line
+const Emoji = ({ label, hidden, symbol }) => {
+  return (
+    <span
+      className='emoji'
+      role='img'
+      aria-label={label ? label : ''}
+      aria-hidden={hidden ? hidden : ''}>
+      {symbol}
+    </span>
+  );
+};
 
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+export default Emoji;
 
----
+```
 
-## Unordered List With Horizontal line
+Once you've defined the Emoji component, you can use it throughout your app by passing in the necessary props. Here is an example:
 
-- First item
-- Second item
-- Third item
-- Fourth item
+```jsx
 
----
+import React from 'react';
+import Emoji from './Emoji';
 
-## Links
+const App = () => {
+  return (
+    <div>
+      <Emoji symbol='👋' label='waving hand' />
+    </div>
+  );
+};
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+export default App;
 
-## Images
+```
 
-![An old rock in the desert](https://images.unsplash.com/photo-1654475677192-2d869348bb4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+### Conclusion
+
+using emojis correctly is paramount to avoiding the problems highlighted above. by adhering to the best practices that I shared with you, and leveraging a reusable React component, you can guarantee that the emojis in your app are accessible and free of errors.

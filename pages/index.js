@@ -63,7 +63,7 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
+        <div className="laptop:mt-20 mt-10 text-center">
           <div className="mt-5">
             <h1
               ref={textOne}
@@ -75,7 +75,7 @@ export default function Home() {
               ref={textTwo}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
-              {data.headerTaglineTwo}
+              {data.headerTaglineTwo} <span className='bg-green-500 text-black px-4 rounded-full italic m-auto'>{ data.name}</span> {data.headerTaglineTwoB}
             </h1>
             <h1
               ref={textThree}
@@ -93,24 +93,25 @@ export default function Home() {
 
           <Socials className="mt-2 laptop:mt-5" />
         </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0" ref={workRef}>
+          <h1 className="text-5xl uppercase font-bold">Here are some of my <br /> Recent <span className='text-green-500'> Works.</span></h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 laptop:grid-row-2 gap-4">
             {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
+                <WorkCard
+                  id={project.id}
+                  key={project.id}
+                  img={project.imageSrc}
+                  name={project.title}
+                  description={project.description}
+                  onClick={() => window.open(project.url)}
+                />
             ))}
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0">
+          <h1 className="tablet:m-10 text-5xl uppercase font-bold">Some of the <span className='text-green-500'>Services</span> <br />I provide.</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
@@ -130,9 +131,16 @@ export default function Home() {
           </div>
         )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
+          <h1 className="tablet:m-10 text-5xl uppercase font-bold">A little <br /> <span className='text-green-500'>About</span> me.</h1>
+          <p className="tablet:m-10 mt-2 text-xl w-full laptop:w-3/5 opacity-50">
+            {`
+          Over the course of my career, I've worked on a wide range of projects, from large-scale enterprise applications to small, experimental prototypes. I'm comfortable working both independently and as part of a team, and I pride myself on my ability to communicate complex technical concepts to non-technical stakeholders in a clear and concise manner, At the end of the day, what motivates me most as a developer is the opportunity to make a positive impact on people's lives through technology. `}
+          </p>
+          {/* <br className='my-5' /> */}
+          <p className="tablet:m-10 text-xl  w-full laptop:w-3/5 opacity-50">
+          {`
+          Whether it's streamlining business processes, improving accessibility and user experience, or solving real-world problems with innovative solutions, I believe that software has the power to change the world for the better. And I'm excited to be a part of that change.
+            `}
           </p>
         </div>
         <Footer />

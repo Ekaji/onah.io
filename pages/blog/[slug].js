@@ -23,19 +23,21 @@ const BlogPost = ({ post }) => {
   }, []);
 
   return (
-    <>
+    // <>
+    <div className="container mx-auto mb-10">
+
       <Head>
         <title>{"Blog - " + post.title}</title>
         <meta name="description" content={post.preview} />
       </Head>
       {data.showCursor && <Cursor />}
 
+      <Header isBlog={true} />
       <div
-        className={`container mx-auto mt-10 ${
+        className={`container max-w-5xl mx-auto mt-10 ${
           data.showCursor && "cursor-none"
         }`}
       >
-        <Header isBlog={true} />
         <div className="mt-10 flex flex-col">
           <img
             className="w-full h-96 rounded-lg shadow-lg object-cover"
@@ -56,7 +58,6 @@ const BlogPost = ({ post }) => {
           </h2>
         </div>
         <ContentSection content={post.content}></ContentSection>
-        <Footer />
       </div>
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
@@ -73,7 +74,9 @@ const BlogPost = ({ post }) => {
           refresh={() => router.reload(window.location.pathname)}
         />
       )}
-    </>
+        <Footer />
+      </div>
+    //  </> 
   );
 };
 
