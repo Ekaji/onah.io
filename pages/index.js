@@ -63,37 +63,37 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10 text-center">
-          <div className="mt-5">
+        <div className="laptop:mt-20 mt-10">
+          <div className="mt-5 mx-auto">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl ml-0 laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-10/12"
             >
               {data.headerTaglineOne}
             </h1>
             <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
             >
               {data.headerTaglineTwo} <span className='bg-green-500 text-black px-4 rounded-full italic m-auto'>{ data.name}</span> {data.headerTaglineTwoB}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
             >
               {data.headerTaglineFour}
             </h1>
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          {/* <Socials className="mt-2 laptop:mt-5" /> */}
         </div>
-        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0" ref={workRef}>
+        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0 laptop:w-10/12 mx-auto" ref={workRef}>
           <h1 className="text-5xl uppercase font-bold">Here are some of my <br /> Recent <span className='text-green-500'> Works.</span></h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 laptop:grid-row-2 gap-4">
@@ -110,9 +110,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-5xl uppercase font-bold">Some of the <span className='text-green-500'>Services</span> <br />I provide.</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+        <div className="mt-10 laptop:mt-32 p-2 laptop:p-0 laptop:w-10/12 mx-auto">
+          <h1 className="tablet:mt-10 text-5xl uppercase font-bold">Some of the <span className='text-green-500'>Services</span> <br />I provide.</h1>
+          <div className="mt-5 tablet:mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -130,14 +130,14 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-5xl uppercase font-bold">A little <br /> <span className='text-green-500'>About</span> me.</h1>
-          <p className="tablet:m-10 mt-2 text-xl w-full laptop:w-3/5 opacity-50">
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0 laptop:w-10/12 mx-auto" ref={aboutRef}>
+          <h1 className="tablet:mt- 10 text-5xl uppercase font-bold">A little <br /> <span className='text-green-500'>About</span> me.</h1>
+          <p className="tablet:mt-10 mt-2 text-xl w-full laptop:w-3/5 opacity-50">
             {`
           Over the course of my career, I've worked on a wide range of projects, from large-scale enterprise applications to small, experimental prototypes. I'm comfortable working both independently and as part of a team, and I pride myself on my ability to communicate complex technical concepts to non-technical stakeholders in a clear and concise manner, At the end of the day, what motivates me most as a developer is the opportunity to make a positive impact on people's lives through technology. `}
           </p>
           {/* <br className='my-5' /> */}
-          <p className="tablet:m-10 text-xl  w-full laptop:w-3/5 opacity-50">
+          <p className="tablet:mt-10 text-xl w-full laptop:w-3/5 opacity-50">
           {`
           Whether it's streamlining business processes, improving accessibility and user experience, or solving real-world problems with innovative solutions, I believe that software has the power to change the world for the better. And I'm excited to be a part of that change.
             `}

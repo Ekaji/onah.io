@@ -10,20 +10,22 @@ const WorkCard = ({ img, name, description, onClick, id }) => {
   return (
 
     <div
-      className={` overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link ${id === "2" ? 'laptop:row-span-2' : 'laptop:row-span-1  max-h-[25rem]'}`}
+      className={`overflow-hidden m-2 first:ml-0 link ${id === "2" ? 'tablet:row-span-2 tablet:max-h-[41rem]' : 'laptop:row-span-1  max-h-[20rem]'}`}
       onClick={onClick}
     >
           <div
-        className={`relative rounded-lg overflow-hidden 
+        className={`relative  overflow-hidden 
             transition-all ease-out duration-300 h-48 
-            mob:h-auto ${theme.theme === 'dark' ? 'bg-[#fee6e3]' : 'bg-black' }`}
-          >
+            mob:h-auto
+            ${theme.theme === 'dark' ? 'bg -[#fee6e3]' : 'bg-black'}
+            `}
+            >
             <img
               alt={name}
               className={`h-full w-full object-cover 
                   hover:scale-110 transition-all ease-out duration-300 bottom-[1rem]
-                  right-[1rem] relative
-                  ${id !== "2" && 'h-[23rem]' }`
+                  right-[1rem] relative 
+                  ${id !== "2" && 'h-[20rem]' }`
                 }
               src={img}
             ></img>
