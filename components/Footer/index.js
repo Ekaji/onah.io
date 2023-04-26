@@ -23,10 +23,10 @@ const Footer = ({}) => {
           </div>
         </div>
       </div>
-      <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
-        Made With ❤ by{" "}
-        <Link href="http://www.chetanverma.com">
-          <a className="underline underline-offset-1">Chetan Verma</a>
+      <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0 flex flex-row justify-center">
+        Made With ❤ by &nbsp;
+        <Link href="mailto:ekajionah@gmail.com">
+          <a className="underline underline-offset-1"> Ekaji Onah</a>
         </Link>
       </h1>
     </>
