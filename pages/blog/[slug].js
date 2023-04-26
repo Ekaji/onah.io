@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useRef, useState } from "react";
 import { getPostBySlug, getAllPosts } from "../../utils/api";
 import Header from "../../components/Header";
