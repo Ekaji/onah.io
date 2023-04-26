@@ -3,13 +3,16 @@ import Button from "../../components/Button";
 import DatePicker from "react-datepicker";
 import TextareaAutosize from "react-textarea-autosize";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 import "react-datepicker/dist/react-datepicker.css";
 
 const BlogEditor = ({ post, close, refresh }) => {
+  const Router = useRouter()
   const { theme } = useTheme();
   const [currentTabs, setCurrentTabs] = useState("BLOGDETAILS");
   const [blogContent, setBlogContent] = useState(post.content);
+  const [currentFileName, setCurrentFileName] = useState(Router.query.slug)
   const [blogVariables, setBlogVariables] = useState({
     date: post.date,
     title: post.title,
@@ -18,8 +21,18 @@ const BlogEditor = ({ post, close, refresh }) => {
     image: post.image,
   });
 
+
+  const pushNewPath = () => {
+    Router.push({
+      pathname: `/blog/${currentFileName}`,
+    }, 
+    undefined, { shallow: true }
+    )
+  }
+
   const savePost = async () => {
     if (process.env.NODE_ENV === "development") {
+      // renameSlug()
       await fetch("/api/blog/edit", {
         method: "POST",
         headers: {
@@ -28,11 +41,14 @@ const BlogEditor = ({ post, close, refresh }) => {
         body: JSON.stringify({
           slug: post.slug,
           content: blogContent,
+          renameSlug: currentFileName !== post.slug,
+          newFileName: currentFileName.replace(/ /g,"_"),
           variables: blogVariables,
         }),
       }).then((data) => {
         if (data.status === 200) {
           close();
+          if (currentFileName !== post.slug) return pushNewPath();
           refresh();
         }
       });
@@ -77,6 +93,20 @@ const BlogEditor = ({ post, close, refresh }) => {
         </div>
         {currentTabs === "BLOGDETAILS" && (
           <div className="mt-10">
+
+            <div className="mt-5 flex flex-col items-center">
+              <label className="w-full text-sx opacity-50">Slug</label>
+              <input
+                value={currentFileName}
+                onChange={(e) =>
+                  setCurrentFileName( e.target.value.replace(/ /g,"_") )
+                }
+                className="w-full mt-2 p-4 hover:border-blue-400 rounded-md shadow-lg border-2"
+                type="text"
+              ></input>
+            </div>
+
+            
             <div className="mt-5 flex flex-col items-center">
               <label className="w-full text-sx opacity-50">Date</label>
               <DatePicker
@@ -154,7 +184,7 @@ const BlogEditor = ({ post, close, refresh }) => {
               <TextareaAutosize
                 className="w-full h-auto mt-5 p-4 border hover:border-blue-400 rounded-xl shadow-xl"
                 value={blogContent}
-                onChange={(e) => setBlogContent(e.target.value)}
+                onChange={(e) => setBlogContent( e.target.value )}
               ></TextareaAutosize>
             </div>
           </div>

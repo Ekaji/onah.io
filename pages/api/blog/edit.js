@@ -7,18 +7,40 @@ export default function handler(req, res) {
   if (process.env.NODE_ENV === "development") {
     if (req.method === "POST") {
       const { date, title, tagline, preview, image } = req.body.variables;
-      fs.writeFile(
-        postsfolder + req.body.slug + ".md",
-        matter.stringify(req.body.content, {
-          date,
-          title,
-          tagline,
-          preview,
-          image,
-        }),
-        "utf-8",
-        (err) => console.log(err)
-      );
+      const { renameSlug, newFileName } = req.body
+
+      if (renameSlug) {
+        fs.rename(postsfolder + req.body.slug + ".md", postsfolder + newFileName + ".md", (err) => {
+          if (!err) {console.log('file renamed')}
+              return console.log('an error occurred')
+        })
+        fs.writeFile(
+          postsfolder + newFileName + ".md",
+          matter.stringify(req.body.content, {
+            date,
+            title,
+            tagline,
+            preview,
+            image,
+          }),
+          "utf-8",
+          (err) => console.log(err)
+        );
+      } else {
+        fs.writeFile(
+          postsfolder + req.body.slug + ".md",
+          matter.stringify(req.body.content, {
+            date,
+            title,
+            tagline,
+            preview,
+            image,
+          }),
+          "utf-8",
+          (err) => console.log(err)
+        );
+      }
+
       res.status(200).json({ status: "DONE" });
     } else {
       res
