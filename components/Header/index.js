@@ -34,7 +34,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               <span className="bg-black">
                 <h1
                   onClick={() => router.push("/")}
-                  className="font-medium cursor-pointer mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
+                  className="font-medium  cursor-pointer mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
                 >
                   EO.
                 </h1>
@@ -136,7 +136,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         <span className="bg-black">
           <h1
             onClick={() => router.push("/")}
-            className="font-medium cursor-pointer mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
+            className="font-medium cursor-pointer text-xl mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
           >
             EO.
           </h1>
