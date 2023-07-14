@@ -6,15 +6,15 @@ import Button from "../Button";
 const Footer = ({}) => {
   return (
     <>
-      <div className="mt-5 laptop:mt-40 p-2 laptop:p-0 laptop:w-10/12 mx-auto">
+      <div className="mt-5 laptop:mt-40 p-2 laptop:p-0 laptop:w-10/12 mx-auto text-3xl font-medium capitalize font-PanchangBold" >
         <div>
           <h1 className="text-2xl text-bold">Contact.</h1>
           <div className="mt-10">
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              LET&apos;S 
+            <h1 className=" text-bold">
+              {`let's`}
             </h1>
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl font-bold text-green-500">
-              COLLABORATE
+            <h1 className=" font-bold text-green-500">
+              collaborate
             </h1>
             <Button type="primary">Schedule a call</Button>
             <div className="mt-10">

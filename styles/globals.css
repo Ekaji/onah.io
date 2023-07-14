@@ -4,12 +4,12 @@
 @tailwind utilities;
 @import "./markdown.css";
 
-* {
+/* * {
   font-family: "Hind";
-}
+} */
 
 body {
-  @apply dark:bg-black dark:text-white;
+  @apply bg-[#CDCCCC] dark:bg-black dark:text-blue-600;
   /* transition: background-color 2s ease-in-out; */
   overflow-x: hidden;
 }
@@ -87,3 +87,129 @@ body {
     padding: 0 40px;
   }
 }
+
+
+/* DMSans */
+@font-face {
+	font-family: "DMSansBold";
+	src: url("/fonts/DMSans-Bold.ttf");
+	font-weight: 900;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSansRegular";
+  src: url("/fonts/DMSans-Medium.ttf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "DMSansMedium";
+	src: url("/fonts/DMSans-Medium.ttf");
+	font-weight: 900;
+	font-style: normal;
+  font-display: swap;
+}
+
+/* mavin */
+@font-face {
+	font-family: "mavinBold";
+	src: url("/fonts/MavenPro-Bold.ttf");
+	font-weight: 900;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "mavinRegular";
+	src: url("/fonts/MavenPro-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+
+/* open sans */
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("/fonts/OpenSans-Light.ttf");
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "OpenSansMedium";
+	src: url("/fonts/OpenSans-Medium.ttf");
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("/fonts/OpenSans-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+/*  Panchang fonts*/
+@font-face {
+	font-family: "PanchangRegular";
+	src: url("/fonts/Panchang-Regular.ttf");
+  font-weight: 400;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "PanchangSemibold";
+	src: url("/fonts/Panchang-Semibold.ttf");
+  font-weight: 600;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "PanchangExtrabold";
+	src: url("/fonts/Panchang-Extrabold.ttf");
+  font-weight: 800;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "PanchangBold";
+	src: url("/fonts/Panchang-Bold.ttf");
+  font-weight: 800;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Satoshi-Variable */
+@font-face {
+	font-family: "SatoshiVariable";
+	src: url("/fonts/Satoshi-Variable.ttf");
+  font-weight: 800;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "SatoshiVariableItalic";
+	src: url("/fonts/Satoshi-VariableItalic.ttf");
+  font-weight: 800;
+  /* font-display: swap; */
+  font-style: normal;
+  font-display: swap;
+}
+/*  */

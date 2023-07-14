@@ -21,16 +21,24 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   return (
     <>
-      <Popover className="block tablet:hidden mt-5">
+      <Popover className="block tablet:hidden mt-5 ">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
+              {/* <h1
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
               >
                 {name}.
-              </h1>
+              </h1> */}
+              <span className="bg-black">
+                <h1
+                  onClick={() => router.push("/")}
+                  className="font-medium cursor-pointer mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
+                >
+                  EO.
+                </h1>
+              </span>
 
               <div className="flex items-center">
                 {data.darkMode && (
@@ -65,12 +73,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </div>
             </div>
             <Popover.Panel
-              className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-wh ite"
+              className={`absolute right-0 z-10 w-11/12 p-4 text-7xl ${
+                theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
               {!isBlog ? (
-                <div className="grid grid-cols-1">
+                <div className="grid grid-cols-1 font-PanchangBold">
                   <Button onClick={handleWorkScroll}>Work</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showBlog && (
@@ -122,15 +130,18 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
+          theme === "light" && "bg-[#CDCCCC]"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <h1
-          onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
-        >
-          {name}.
-        </h1>
+        <span className="bg-black">
+          <h1
+            onClick={() => router.push("/")}
+            className="font-medium cursor-pointer mob:p-2 laptop:p-0 text-white m-4 w- 10 h- 10 font-PanchangExtrabold"
+          >
+            EO.
+          </h1>
+        </span>
+            {/* {name}. */}
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>

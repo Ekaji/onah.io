@@ -10,11 +10,14 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
-
+import { useTheme } from "next-themes";
+import Arch from "../components/arch";
 // Local Data
 import data from "../data/portfolio.json";
 
 export default function Home() {
+
+  const { theme } = useTheme();
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();
@@ -58,28 +61,42 @@ export default function Home() {
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
 
-      <div className="container mx-auto mb-10">
+
+      <div className="relative">
+        <div className="fixed bottom-20 right-8   lg:bottom-8 lg:left-12 text-black lg:text-black">
+          {/* <Arch /> */}
+          <Arch />
+        </div>
+      <div className="container mx-auto mb-10 cursor-default">
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
-          <div className="mt-5 mx-auto">
+        <div className="laptop:mt-20 mt-10 ">
+          <div className="mt-5 mx-auto text-center font-PanchangExtrabold capitalize"
+
+          >
             <h1
               ref={textOne}
-              className="text-3xl ml-0 laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-10/12"
+              className="text-4xl ml-0 laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-10/12"
             >
-              {data.headerTaglineOne}
+              {data.headerTaglineOne} {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textTwo}
-              className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
+              style={{lineHeight: '65 px'}}
+              className="text-4xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w -10/12"
             >
-              {data.headerTaglineTwo} <span className='bg-green-500 text-black px-4 rounded-full italic m-auto'>{ data.name}</span> {data.headerTaglineTwoB}
+              {/* {data.headerTaglineTwo} */}
+              <span className={` border-4   tablet:px-12 block tablet:inline-block py-3 mx-5 rounded-full italic m-auto ${
+                  theme === "dark" ? "border-green-500 text-green-500 bg-s late-600" : "border-black text-black bg-slate-100"
+                }`}>{data.name}</span>
+              {data.headerTaglineTwoB}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
+              className="text-4xl laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
+              style={{lineHeight: '6 5px'}}
             >
               {data.headerTaglineThree}
             </h1>
@@ -87,16 +104,18 @@ export default function Home() {
               ref={textFour}
               className="text-3xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
             >
-              {data.headerTaglineFour}
+              {/* {data.headerTaglineFour} */}
             </h1>
           </div>
 
           {/* <Socials className="mt-2 laptop:mt-5" /> */}
         </div>
         <div className="mt-10 laptop:mt-32 p-2 laptop:p-0 laptop:w-10/12 mx-auto" ref={workRef}>
-          <h1 className="text-5xl uppercase font-bold">Here are some of my <br /> Recent <span className='text-green-500'> Works.</span></h1>
+          <h1 className="text-4xl capitalize font-bold font-PanchangExtrabold">Here are some of my <br /> Recent <span className='text-green-500'> Works.</span></h1>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 laptop:grid-row-2 gap-4">
+          <div className="mt-5 laptop:mt-10
+          ">
+            {/* grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 laptop:grid-row-2 gap-4 */}
             {data.projects.map((project) => (
                 <WorkCard
                   id={project.id}
@@ -111,7 +130,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 laptop:mt-32 p-2 laptop:p-0 laptop:w-10/12 mx-auto">
-          <h1 className="tablet:mt-10 text-5xl uppercase font-bold">Some of the <span className='text-green-500'>Services</span> <br />I provide.</h1>
+          <h1 className="tablet:mt-10 text-4xl capitalize font-bold font-PanchangExtrabold">Some of the <br /> <span className='text-green-500'>Services</span> I provide.</h1>
           <div className="mt-5 tablet:mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
@@ -131,7 +150,7 @@ export default function Home() {
           </div>
         )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0 laptop:w-10/12 mx-auto" ref={aboutRef}>
-          <h1 className="tablet:mt- 10 text-5xl uppercase font-bold">A little <br /> <span className='text-green-500'>About</span> me.</h1>
+          <h1 className="tablet:mt- 10 text-4xl capitalize font-bold font-PanchangExtrabold">A little <br /> <span className='text-green-500'>About</span> me.</h1>
           <p className="tablet:mt-10 mt-2 text-xl w-full laptop:w-3/5 opacity-50">
             {`
           Over the course of my career, I've worked on a wide range of projects, from large-scale enterprise applications to small, experimental prototypes. I'm comfortable working both independently and as part of a team, and I pride myself on my ability to communicate complex technical concepts to non-technical stakeholders in a clear and concise manner, At the end of the day, what motivates me most as a developer is the opportunity to make a positive impact on people's lives through technology. `}
@@ -144,6 +163,7 @@ export default function Home() {
           </p>
         </div>
         <Footer />
+      </div>
       </div>
     </div>
   );
