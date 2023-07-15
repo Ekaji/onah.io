@@ -52,7 +52,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    <div className={` relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
@@ -63,7 +63,7 @@ export default function Home() {
 
 
       <div className="relative">
-        <div className="fixed bottom-20 right-8   lg:bottom-8 lg:left-12 text-black lg:text-black">
+        <div className="fixed bottom-20 right-8 lg:bottom-8 lg:left-12 text-black lg:text-black">
           {/* <Arch /> */}
           <Arch />
         </div>
@@ -72,30 +72,32 @@ export default function Home() {
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10 ">
+        <div className="laptop:mt-12 mt-0 flex flex-col justify-center py-20 tablet:py-0 min-h-[80vh]">
           <div className="mt-5 mx-auto text-center font-PanchangExtrabold capitalize"
 
           >
             <h1
               ref={textOne}
-              className="text-4xl ml-0 laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-10/12"
+              className="text-4xl leading-[3.5rem] ml-0 laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-10/12"
             >
               {data.headerTaglineOne} {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textTwo}
               style={{lineHeight: '65 px'}}
-              className="text-4xl laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w -10/12"
+              className="text-4xl leading-[3.5rem] laptop:mx-auto tablet:text-6xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w -10/12"
             >
               {/* {data.headerTaglineTwo} */}
-              <span className={` border-4   tablet:px-12 block tablet:inline-block py-3 mx-5 rounded-full italic m-auto ${
+              <span className={` border-4 leading-[3.5rem]  tablet:px-12 block tablet:inline-block py-3 mx-5 rounded-full italic m-auto ${
                   theme === "dark" ? "border-green-500 text-green-500 bg-s late-600" : "border-black text-black bg-slate-100"
-                }`}>{data.name}</span>
-              {data.headerTaglineTwoB}
+                  }`}>{data.name}</span>
+                <span className="leading-[3.5rem]">
+                  {data.headerTaglineTwoB}
+                </span>
             </h1>
             <h1
               ref={textThree}
-              className="text-4xl laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
+              className="text-4xl leading-[3.5rem] laptop:mx-auto tablet:text-6xl laptop:text-6xl p-1 tablet:p-2 text-bold w-full laptop:w-10/12"
               style={{lineHeight: '6 5px'}}
             >
               {data.headerTaglineThree}
