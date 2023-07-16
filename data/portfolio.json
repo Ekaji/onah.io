@@ -1,1 +1,108 @@
-{"name":"Ekaji Onah","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm","headerTaglineTwoB":"a software developer","headerTaglineThree":"with strong analytical and problem-solving skills.","headerTaglineFour":"Based in Nigeria.","showCursor":false,"showBlog":true,"darkMode":false,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/Ekaji"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/ekaji-onah-819564150/"},{"id":"3","title":"Twitter","link":"https://twitter.com/iamnot_aRobot"},{"id":"5","title":"Email","link":"mailto:ekajionah@gmail.com"}],"projects":[{"id":"1","title":"TAC Africa Website","description":"Fullstack web development","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374584/Screenshot_from_2023-04-13_09-23-42_gydkdm.png","url":"https://www.tacafrica.org/"},{"id":"2","title":"MY VC","description":"Mobile development","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681378908/Screenshot_from_2023-04-13_10-41-09_rccefs.png","url":"https://myvc.com/"},{"id":"3","title":"School of hard Knocks Nigeria","description":"Fullstack development","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374997/Screenshot_from_2023-04-13_09-36-16_vrgs6t.png","url":"https://www.schoolofhardknocks.com.ng/"},{"id":"4","title":"Mr. Tidy Nigeria","description":"Frontend development","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681379288/Screenshot_from_2023-04-13_10-46-36_xqqrhp.png","url":"http://mrtidynigeria.com/"},{"id":"5","title":"TAC Africa Website","description":"Fullstack web development","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374584/Screenshot_from_2023-04-13_09-23-42_gydkdm.png","url":"https://www.tacafrica.org/"}],"services":[{"id":"1","title":"UI/UX development","description":"We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."},{"id":"2","title":"Technical writing","description":"I write engaging technical documents such as user manuals and API documentation tha help users understand and effectively use software systems."},{"id":"3","title":"Software development","description":" I have experience developing software for various platforms, including web and mobile applications. I can work with multiple programming languages and technologies to deliver high-quality software solutions."},{"id":"3","title":"API development","description":"I have extensive work experience in designing and developing APIs. I have experience with RESTful and SOAP APIs and can integrate them with different systems to enable seamless communication between them.."}],"aboutpara":"Over the course of my career, I've worked on a wide range of projects, from large-scale enterprise applications to small, experimental prototypes. I'm comfortable working both independently and as part of a team, and I pride myself on my ability to communicate complex technical concepts to non-technical stakeholders in a clear and concise manner. At the end of the day, what motivates me most as a developer is the opportunity to make a positive impact on people's lives through technology. Whether it's streamlining business processes, improving accessibility and user experience, or solving real-world problems with innovative solutions, I believe that software has the power to change the world for the better. And I'm excited to be a part of that change.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD"]}}
+{
+    "name": "Ekaji Onah",
+    "headerTaglineOne": "Hello 👋",
+    "headerTaglineTwo": "I'm",
+    "headerTaglineTwoB": "a software developer",
+    "headerTaglineThree": "with strong analytical and problem-solving skills.",
+    "headerTaglineFour": "Based in Nigeria.",
+    "showCursor": false,
+    "showBlog": true,
+    "darkMode": false,
+    "showResume": true,
+    "socials": [
+        {
+            "id": "1",
+            "title": "Github",
+            "link": "https://github.com/Ekaji"
+        }, {
+            "id": "2",
+            "title": "LinkedIn",
+            "link": "https://www.linkedin.com/in/ekaji-onah-819564150/"
+        }, {
+            "id": "3",
+            "title": "Twitter",
+            "link": "https://twitter.com/iamnot_aRobot"
+        }, {
+            "id": "5",
+            "title": "Email",
+            "link": "mailto:ekajionah@gmail.com"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "TAC Africa Website",
+            "description": "Fullstack web development",
+            "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374584/Screenshot_from_2023-04-13_09-23-42_gydkdm.png",
+            "url": "https://www.tacafrica.org/"
+        },
+        {
+            "id": "2",
+            "title": "MY VC",
+            "description": "Mobile development",
+            "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681378908/Screenshot_from_2023-04-13_10-41-09_rccefs.png",
+            "url": "#"
+        },
+        {
+            "id": "3",
+            "title": "School of hard Knocks Nigeria",
+            "description": "Fullstack development",
+            "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374997/Screenshot_from_2023-04-13_09-36-16_vrgs6t.png",
+            "url": "https://www.schoolofhardknocks.com.ng/"
+        },
+        {
+            "id": "4",
+            "title": "Mr. Tidy Nigeria",
+            "description": "Frontend development",
+            "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681379288/Screenshot_from_2023-04-13_10-46-36_xqqrhp.png",
+            "url": "http://mrtidynigeria.com/"
+        }
+    ],
+    "services": [
+        {
+            "id": "1",
+            "title": "Technical writing",
+            "description": "I write engaging technical documents such as user manuals and API documentation tha help users understand and effectively use software systems."
+        }, {
+            "id": "2",
+            "title": "Software development",
+            "description": " I have experience developing software for various platforms, including web and mobile applications. I can work with multiple programming languages and technologies to deliver high-quality software solutions."
+        }, {
+            "id": "3",
+            "title": "API development",
+            "description": "I have extensive work experience in designing and developing APIs. I have experience with RESTful and SOAP APIs and can integrate them with different systems to enable seamless communication between them.."
+        }
+    ],
+    "aboutpara": "Over the course of my career, I've worked on a wide range of projects, from large-scale enterprise applications to small, experimental prototypes. I'm comfortable working both independently and as part of a team, and I pride myself on my ability to communicate complex technical concepts to non-technical stakeholders in a clear and concise manner. At the end of the day, what motivates me most as a developer is the opportunity to make a positive impact on people's lives through technology. Whether it's streamlining business processes, improving accessibility and user experience, or solving real-world problems with innovative solutions, I believe that software has the power to change the world for the better. And I'm excited to be a part of that change.",
+    "resume": {
+        "tagline": "👋  I'm a software engineer, product designer.",
+        "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
+        "experiences": [
+            {
+                "id": "1",
+                "dates": "March 2022 - Present",
+                "type": "Full Time",
+                "position": "Frontend Engineer at X",
+                "bullets": "Bullet One, Bullet Two"
+            }, {
+                "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
+                "dates": "July 2020 - March 2022",
+                "type": "Full Time",
+                "position": "Frontend Engineer at X",
+                "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+            }
+        ],
+        "education": {
+            "universityName": "University X",
+            "universityDate": "2016-2020",
+            "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+        },
+        "languages": [
+            "Javascript", "HTML5", "CSS", "Python"
+        ],
+        "frameworks": [
+            "React", "Typescript", "NodeJs"
+        ],
+        "others": ["Figma", "AdobeXD"]
+    }
+}
