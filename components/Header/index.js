@@ -84,7 +84,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
+                  {/* {showResume && (
                     <Button
                       onClick={() =>
                         window.open("mailto:ekajionah@gmail.com")
@@ -92,7 +92,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                     >
                       Resume
                     </Button>
-                  )}
+                  )} */}
 
                   <Button
                     onClick={() => window.open("mailto:ekajionah@gmail.com")}
@@ -108,14 +108,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
+                  {/* {showResume && (
                     <Button
                       onClick={() => router.push("/resume")}
                       classes="first:ml-1"
                     >
                       Resume
                     </Button>
-                  )}
+                  )} */}
 
                   <Button
                     onClick={() => window.open("mailto:ekajionah@gmail.com")}
@@ -149,14 +149,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
-            {showResume && (
+            {/* {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
               </Button>
-            )}
+            )} */}
 
             <Button onClick={() => window.open("mailto:ekajionah@gmail.com")}>
               Contact
@@ -178,14 +178,14 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
-            {showResume && (
+            {/* {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
                 Resume
               </Button>
-            )}
+            )} */}
 
             <Button onClick={() => window.open("mailto:ekajionah@gmail.com")}>
               Contact
