@@ -11,11 +11,13 @@ const Footer = ({}) => {
           <h1 className="text-2xl text-bold">Contact.</h1>
           <div className="mt-10">
             <h1 className=" text-bold">
-              If you're building a product, refining an idea, or need a reliable
-              developer to execute clearly and efficiently, I'm open to
-              collaboration.
+              If you&apos;re building a product, refining an idea, or need a
+              reliable developer to execute clearly and efficiently, I&apos;m
+              open to collaboration.
             </h1>
-            <h1 className=" font-bold text-green-500">Let's Collaborate</h1>
+            <h1 className=" font-bold text-green-500">
+              Let&apos;s Collaborate
+            </h1>
             <Button type="primary">Schedule a call</Button>
             <div className="mt-10">
               <Socials />

@@ -1,1 +1,102 @@
-{"name":"Ekaji Onah","headerTaglineOne":"Hello, I'm","headerTaglineTwo":"","headerTaglineTwoB":"Software Developer","headerTaglineThree":"I build practical, scalable software products with a strong focus on clarity, performance, and real-world usability. I specialize in turning ideas into working systems—whether that's a SaaS product, a business tool, or an MVP ready for users.","headerTaglineFour":"","showCursor":true,"showBlog":true,"darkMode":false,"showResume":true,"socials":[{"id":"1","title":"Github","link":"https://github.com/Ekaji"},{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/ekaji-onah-819564150/"},{"id":"3","title":"Twitter","link":"https://twitter.com/iamnot_aRobot"},{"id":"5","title":"Email","link":"mailto:ekajionah@gmail.com"}],"projects":[{"id":"1","title":"TAC Africa","description":"Full-stack web development - Designed and built a professional business website focused on clarity, credibility, and lead generation.","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374584/Screenshot_from_2023-04-13_09-23-42_gydkdm.png","url":"https://www.tacafrica.org/"},{"id":"2","title":"MY VC","description":"Mobile application development - Worked on mobile features and application logic with a focus on usability and performance.","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681378908/Screenshot_from_2023-04-13_10-41-09_rccefs.png","url":"#"},{"id":"3","title":"School of Hard Knocks Nigeria","description":"Full-stack development - Developed and maintained web-based functionality to support organizational operations and outreach.","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374997/Screenshot_from_2023-04-13_09-36-16_vrgs6t.png","url":"https://www.schoolofhardknocks.com.ng/"},{"id":"4","title":"Mr. Tidy Nigeria","description":"Front-end development - Built a clean, user-friendly interface to clearly present services and drive customer inquiries.","imageSrc":"https://res.cloudinary.com/dtshe5gsz/image/upload/v1681379288/Screenshot_from_2023-04-13_10-46-36_xqqrhp.png","url":"http://mrtidynigeria.com/"}],"services":[{"id":"1","title":"Software Development","description":"I design and build web and mobile applications—from simple MVPs to more complex production systems. My work prioritizes maintainability, scalability, and business goals over unnecessary complexity."},{"id":"2","title":"API Development & Integration","description":"I design and implement reliable APIs, primarily REST-based, and integrate third-party services such as payments, authentication, AI services, and data platforms to support modern applications."},{"id":"3","title":"Technical Writing & Documentation","description":"I write clear, structured technical documentation, including API docs and product guides, that help teams, users, and stakeholders understand how systems work and how to use them effectively."}],"aboutpara":"Over the course of my career, I've worked on a wide range of projects—spanning SaaS products, internal tools, AI-powered applications, and business websites. I'm comfortable working independently or within a team, and I place a strong emphasis on clear communication, especially when translating technical concepts for non-technical stakeholders. What motivates me most is building software that actually gets used. Whether it's streamlining workflows, improving accessibility, or solving practical business problems, I believe technology should be purposeful, simple where possible, and effective where it matters. I'm particularly interested in early-stage products, MVPs, and tools that help individuals and businesses operate more efficiently.","resume":{"tagline":"👋  I'm a software engineer, product designer.","description":"I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.","experiences":[{"id":"1","dates":"March 2022 - Present","type":"Full Time","position":"Frontend Engineer at X","bullets":"Bullet One, Bullet Two"},{"id":"d495c23b-4f65-479a-9b8a-cfbc1c089725","dates":"July 2020 - March 2022","type":"Full Time","position":"Frontend Engineer at X","bullets":"Worked on the frontend of a React application, Worked on the frontend of a React application"}],"education":{"universityName":"University X","universityDate":"2016-2020","universityPara":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"},"languages":["Javascript","HTML5","CSS","Python"],"frameworks":["React","Typescript","NodeJs"],"others":["Figma","AdobeXD"]}}
+{
+  "name": "Ekaji Onah",
+  "headerTaglineOne": "Hello, I'm",
+  "headerTaglineTwo": "",
+  "headerTaglineTwoB": "Software Developer",
+  "headerTaglineThree": "I build practical, scalable software products with a strong focus on clarity, performance, and real-world usability. I specialize in turning ideas into working systems—whether that's a SaaS product, a business tool, or an MVP ready for users.",
+  "headerTaglineFour": "",
+  "showCursor": true,
+  "showBlog": true,
+  "darkMode": false,
+  "showResume": true,
+  "socials": [
+    { "id": "1", "title": "Github", "link": "https://github.com/Ekaji" },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/ekaji-onah-819564150/"
+    },
+    {
+      "id": "3",
+      "title": "Twitter",
+      "link": "https://twitter.com/iamnot_aRobot"
+    },
+    { "id": "5", "title": "Email", "link": "mailto:ekajionah@gmail.com" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "TAC Africa",
+      "description": "Full-stack web development - Designed and built a professional business website focused on clarity, credibility, and lead generation.",
+      "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374584/Screenshot_from_2023-04-13_09-23-42_gydkdm.png",
+      "url": "https://www.tacafrica.org/"
+    },
+    {
+      "id": "2",
+      "title": "MY VC",
+      "description": "Mobile application development - Worked on mobile features and application logic with a focus on usability and performance.",
+      "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681378908/Screenshot_from_2023-04-13_10-41-09_rccefs.png",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "title": "School of Hard Knocks Nigeria",
+      "description": "Full-stack development - Developed and maintained web-based functionality to support organizational operations and outreach.",
+      "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681374997/Screenshot_from_2023-04-13_09-36-16_vrgs6t.png",
+      "url": "https://www.schoolofhardknocks.com.ng/"
+    },
+    {
+      "id": "4",
+      "title": "Mr. Tidy Nigeria",
+      "description": "Front-end development - Built a clean, user-friendly interface to clearly present services and drive customer inquiries.",
+      "imageSrc": "https://res.cloudinary.com/dtshe5gsz/image/upload/v1681379288/Screenshot_from_2023-04-13_10-46-36_xqqrhp.png",
+      "url": "http://mrtidynigeria.com/"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Software Development",
+      "description": "I design and build web and mobile applications—from simple MVPs to more complex production systems. My work prioritizes maintainability, scalability, and business goals over unnecessary complexity."
+    },
+    {
+      "id": "2",
+      "title": "API Development & Integration",
+      "description": "I design and implement reliable APIs, primarily REST-based, and integrate third-party services such as payments, authentication, AI services, and data platforms to support modern applications."
+    },
+    {
+      "id": "3",
+      "title": "Technical Writing & Documentation",
+      "description": "I write clear, structured technical documentation, including API docs and product guides, that help teams, users, and stakeholders understand how systems work and how to use them effectively."
+    }
+  ],
+  "aboutpara": "Over the course of my career, I've worked on a wide range of projects—spanning SaaS products, internal tools, AI-powered applications, and business websites. I'm comfortable working independently or within a team, and I place a strong emphasis on clear communication, especially when translating technical concepts for non-technical stakeholders. What motivates me most is building software that actually gets used. Whether it's streamlining workflows, improving accessibility, or solving practical business problems, I believe technology should be purposeful, simple where possible, and effective where it matters. I'm particularly interested in early-stage products, MVPs, and tools that help individuals and businesses operate more efficiently.",
+  "resume": {
+    "tagline": "👋  I'm a software engineer, product designer.",
+    "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "March 2022 - Present",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Bullet One, Bullet Two"
+      },
+      {
+        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
+        "dates": "July 2020 - March 2022",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+      }
+    ],
+    "education": {
+      "universityName": "University X",
+      "universityDate": "2016-2020",
+      "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+    },
+    "languages": ["Javascript", "HTML5", "CSS", "Python"],
+    "frameworks": ["React", "Typescript", "NodeJs"],
+    "others": ["Figma", "AdobeXD"]
+  }
+}
